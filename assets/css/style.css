@@ -7,59 +7,47 @@ body {
   background-color: #141414;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 100%);
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-.wrapper section {
-  width: 100%;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  margin: 20px 0;
-}
-.wrapper section .item {
-  padding: 0 2px;
-  transition: 250ms all;
-}
-.wrapper section .item:hover {
-  margin: 0 40px;
-  transform: scale(1.2);
-}
-.wrapper section a {
-  position: absolute;
-  color: #fff;
-  text-decoration: none;
-  font-size: 6em;
-  background: rgb(0, 0, 0);
-  width: 80px;
-  padding: 20px;
-  text-align: center;
-  z-index: 1;
-}
-.wrapper section a:nth-of-type(1) {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-}
-.wrapper section a:nth-of-type(2) {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-}
-
 .custom-navbar {
   background-color: #141414;
 }
 
-nav a {
+svg {
+  cursor: pointer;
+}
+
+/* Stile del bottone */
+.btn-filter {
+  border: 1px solid white;
+  background-color: #141414;
+  color: white;
+  border-radius: 0;
+}
+
+.btn-filter:hover {
+  background-color: #333;
   color: white;
 }
 
-svg {
-  cursor: pointer;
+/* Stile della lista della dropdown */
+.dropdown-menu {
+  background-color: #141414;
+  border: 1px solid white;
+  color: white;
+  border-radius: 0;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.botton-list svg {
+  width: 55px;
+  border: 1px solid white;
+  padding: 15px 20px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }

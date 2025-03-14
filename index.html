@@ -108,67 +108,419 @@
     <!-- main -->
     <main>
       <!-- section filter -->
-      <div class="row"></div>
-      <div class="wrapper">
-        <section id="section1">
-          <a href="#section3">‹</a>
-          <div class="item">
-            <img src="assets/img/media/media0.webp" alt="Describe Image" />
+      <div class="row py-4">
+        <div class="col-2 text-white"><h1 class="ms-5">TV Shows</h1></div>
+        <div class="col-2">
+          <!-- Bottone Dropdown con Bootstrap -->
+          <div class="dropdown">
+            <button
+              class="btn btn-filter dropdown-toggle"
+              type="button"
+              id="filterButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Genres
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="filterButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Comedy</a></li>
+              <li><a class="dropdown-item" href="#">Drama</a></li>
+              <li><a class="dropdown-item" href="#">Horror</a></li>
+              <li><a class="dropdown-item" href="#">Romance</a></li>
+              <li><a class="dropdown-item" href="#">Science Fiction</a></li>
+              <li><a class="dropdown-item" href="#">Documentary</a></li>
+            </ul>
           </div>
-          <div class="item">
-            <img src="assets/img/media/media1.jpg" alt="Describe Image" />
+        </div>
+        <div class="col-8 d-flex justify-content-end pe-5">
+          <div class="botton-list">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-list-nested text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
           </div>
-          <div class="item">
-            <img src="assets/img/media/media4.jpg" alt="Describe Image" />
+          <div class="botton-list">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-grid-fill text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z"
+              />
+            </svg>
           </div>
-          <div class="item">
-            <img src="assets/img/media/media5.webp" alt="Describe Image" />
-          </div>
-          <div class="item">
-            <img src="assets/img/media/media6.jpg" alt="Describe Image" />
-          </div>
-          <a href="#section3">›</a>
-        </section>
-        <section id="section2">
-          <a href="#section1">‹</a>
-          <div class="item">
-            <img src="assets/img/media/media7.webp" alt="Describe Image" />
-          </div>
-          <div class="item">
-            <img src="img7.jpg" alt="Describe Image" />
-          </div>
-          <div class="item">
-            <img src="img8.jpg" alt="Describe Image" />
-          </div>
-          <div class="item">
-            <img src="img9.jpg" alt="Describe Image" />
-          </div>
-          <div class="item">
-            <img src="img10.jpg" alt="Describe Image" />
-          </div>
-          <a href="#section3">›</a>
-        </section>
-
-        <section id="section3">
-          <a href="#section2">‹</a>
-          <div class="item">
-            <img src="img11.jpg" alt="Describe Image" />
-          </div>
-          <div class="item">
-            <img src="img12.jpg" alt="Describe Image" />
-          </div>
-          <div class="item">
-            <img src="img13.jpg" alt="Describe Image" />
-          </div>
-          <div class="item">
-            <img src="img14.jpg" alt="Describe Image" />
-          </div>
-          <div class="item">
-            <img src="img15.jpg" alt="Describe Image" />
-          </div>
-          <a href="#section1">›</a>
-        </section>
+        </div>
       </div>
+
+      <!-- carousel-1 -->
+
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <h3 class="text-white mx-5">Trending Now</h3>
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media0.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media2.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media3.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media4.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media5.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media0.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media2.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media3.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media4.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media5.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- fine primo carosello -->
+
+      <div
+        id="carouselExample-2"
+        class="carousel slide mt-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <h3 class="text-white mx-5">Watch It Again</h3>
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media6.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media7.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media8.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media9.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media10.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media11.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media12.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media13.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media14.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media15.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media16.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media17.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample-2"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample-2"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- fine secondo carosello -->
+      <div
+        id="carouselExample-3"
+        class="carousel slide mt-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <h3 class="text-white mx-5">New Releases</h3>
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media18.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media19.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media20.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media21.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media22.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media23.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media24.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media25.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media26.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media27.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media28.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-2">
+                <img
+                  src="assets/img/media/media29.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample-3"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample-3"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- fine terzo carosello -->
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
