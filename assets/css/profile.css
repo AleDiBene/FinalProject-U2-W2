@@ -82,6 +82,67 @@ header img {
   border-bottom: 1px solid rgb(82, 82, 82);
 }
 
+.controls {
+  margin-top: 30px;
+}
+
+.d-flex {
+  margin-bottom: 10px;
+}
+
+.check-container {
+  font-size: 0.9rem;
+}
+
+.custom-checkbox {
+  width: 25px;
+  height: 25px;
+  appearance: none; /* Rimuove lo stile predefinito */
+  border: 1px solid rgb(104, 103, 103); /* Bordi bianchi */
+  border-radius: 0; /* Mantiene la forma quadrata */
+  background: transparent; /* Sfondo trasparente */
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.custom-checkbox:checked {
+  background-color: white; /* Sfondo bianco quando è selezionata */
+}
+
+.custom-checkbox:checked::after {
+  content: "✔";
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line-bottom {
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(82, 82, 82);
+}
+
+.button-end {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.button-end-btn {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 0;
+  border: 2px solid rgb(47, 47, 47);
+  color: rgb(77, 77, 77);
+  padding: 15px 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
 footer {
   margin-top: 60px;
 }
