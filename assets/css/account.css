@@ -67,3 +67,14 @@ footer .btn {
 footer p {
   color: rgb(77, 77, 77);
 }
+
+.last-section {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 430px) {
+  .account {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
