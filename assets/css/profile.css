@@ -1,19 +1,23 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
-  padding: 0;
   background-color: #141414;
 }
 
-.custom-navbar {
-  background-color: #141414;
+header img {
+  width: 10%;
 }
 
-svg {
-  cursor: pointer;
+.custom-row {
+  width: 40%;
+  margin: 0 auto;
+  color: white;
+  margin-top: 60px;
+}
+
+.custom-row h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  border-bottom: 1px solid rgb(82, 82, 82);
 }
 
 /* Stile del bottone */
@@ -41,24 +45,41 @@ svg {
   color: white;
 }
 
-.botton-list svg {
-  width: 55px;
-  border: 1px solid white;
-  padding: 15px 20px;
+.row h3 {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 90%;
+  background-color: gray;
 }
 
-.carousel-item img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
+.language {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(82, 82, 82);
 }
 
-nav a {
-  text-decoration: none;
-}
-
-svg {
+.maturity button {
+  width: 70px;
+  text-align: center;
+  border-radius: 0;
+  border: 2px solid rgb(47, 47, 47);
   color: rgb(77, 77, 77);
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.maturity h4 {
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.par-maturity {
+  background-color: rgb(71, 71, 71);
+  width: 40%;
+}
+
+.maturity {
+  border-bottom: 1px solid rgb(82, 82, 82);
 }
 
 footer {
@@ -89,8 +110,4 @@ footer .btn {
 
 footer p {
   color: rgb(77, 77, 77);
-}
-
-.utente-img {
-  cursor: pointer;
 }
