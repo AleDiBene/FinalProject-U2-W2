@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background-color: #141414;
 }
 
@@ -50,4 +51,41 @@ svg {
   object-fit: cover;
   width: 100%;
   height: auto;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+svg {
+  color: rgb(77, 77, 77);
+}
+
+footer {
+  margin-top: 60px;
+}
+
+footer ul {
+  margin-top: 40px;
+  list-style-type: none;
+}
+
+li {
+  color: rgb(77, 77, 77);
+  margin-bottom: 20px;
+}
+
+footer .btn {
+  width: 150px;
+  border-radius: 0;
+  border: 2px solid rgb(47, 47, 47);
+  color: rgb(47, 47, 47); /* Colore del testo */
+  padding: 10px; /* Padding per migliorare la dimensione del bottone */
+  text-align: center; /* Centra il testo */
+  text-decoration: none; /* Rimuove eventuali sottolineature */
+  margin-bottom: 20px;
+}
+
+.utente-img {
+  cursor: pointer;
 }
